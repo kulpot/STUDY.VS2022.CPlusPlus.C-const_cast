@@ -5,7 +5,15 @@ using std::endl;
 //----------------------- C++ const_cast ------------------------------------------------------------------
 //ref link:https://www.youtube.com/watch?v=SJ7ZTpNydTk&list=PLRwVmtr-pp070AKU7G71q8XyCRttsWIvi&index=5&t=1s
 
-class Cow {};
+class Cow {
+public:
+	void saySomething();
+};
+
+void f(Cow* c)
+{
+	c->saySomething();
+}
 
 void main()
 {
