@@ -10,6 +10,7 @@ class Cow {};
 void main()
 {
 	const Cow* c = new Cow;
+	Cow* c2 = c;
 
 	delete c;
 }
