@@ -5,6 +5,11 @@ using std::endl;
 //----------------------- C++ const_cast ------------------------------------------------------------------
 //ref link:https://www.youtube.com/watch?v=SJ7ZTpNydTk&list=PLRwVmtr-pp070AKU7G71q8XyCRttsWIvi&index=5&t=1s
 
+/*
+* const_cast allows you to remove the const definition of the object.
+* You can use this thing when you should pass an regular object to a function but your object is a const object. The function will not accept the const object.
+*/
+
 class Cow {
 public:
 	void saySomething() { cout << "waaa" << endl; }
