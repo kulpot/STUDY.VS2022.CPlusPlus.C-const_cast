@@ -7,10 +7,10 @@ using std::endl;
 
 class Cow {
 public:
-	void saySomething();
+	void saySomething() { cout << "waaa" << endl; }
 };
 
-void f(Cow* c)
+void f(Cow* c)		//none-const pointer
 {
 	c->saySomething();
 }
@@ -18,8 +18,10 @@ void f(Cow* c)
 void main()
 {
 	const Cow* c = new Cow;
-	//Cow* c2 = c;		//error: c is and const
+	//f(c);			//error: f function is not const
+	//Cow* c2 = c;		//error: c is not const
 	Cow* c2 = const_cast<Cow*>(c);
+	f(const_cast<Cow*>(c));
 
 	delete c;
 }
