@@ -5,26 +5,26 @@ using std::endl;
 //------------------------- const pointers -----------------------------------------------------------------
 //ref link:https://www.youtube.com/watch?v=BimM1lLeZg8&list=PLRwVmtr-pp070AKU7G71q8XyCRttsWIvi&index=2&t=1s
 
-class Cow
-{
-	int mooCount;
-public:
-	Cow() { mooCount = 0; }
-	void moo() { cout << mooCount++ << endl; }
-	void saySomething() const { cout << "Hello" << endl; }
-};
-
-void main()
-{
-	Cow* c = new Cow;
-	//const Cow* constCow = c;
-	//Cow* const constCow = c;		//pointer itself is const
-	//constCow = new Cow;		// error cant modify const constCow
-	const Cow* const constCow = c;		// the object and the pointer is const
-	c->moo();
-	//constCow->moo();		// error cant modify const Cow*	, solution: Cow* const constCow = c;
-	delete c;
-}
+//class Cow
+//{
+//	int mooCount;
+//public:
+//	Cow() { mooCount = 0; }
+//	void moo() { cout << mooCount++ << endl; }
+//	void saySomething() const { cout << "Hello" << endl; }
+//};
+//
+//void main()
+//{
+//	Cow* c = new Cow;
+//	//const Cow* constCow = c;
+//	//Cow* const constCow = c;		//pointer itself is const
+//	//constCow = new Cow;		// error cant modify const constCow
+//	const Cow* const constCow = c;		// the object and the pointer is const
+//	c->moo();
+//	//constCow->moo();		// error cant modify const Cow*	, solution: Cow* const constCow = c;
+//	delete c;
+//}
 
 
 
