@@ -2,6 +2,49 @@
 using std::cout;
 using std::endl;
 
+//----------------------- C++ const_cast ------------------------------------------------------------------
+//ref link:https://www.youtube.com/watch?v=SJ7ZTpNydTk&list=PLRwVmtr-pp070AKU7G71q8XyCRttsWIvi&index=5&t=1s
+
+class Cow {};
+
+void main()
+{
+	const Cow* c = new Cow;
+
+	delete c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //------------------------- const pointers -----------------------------------------------------------------
 //ref link:https://www.youtube.com/watch?v=BimM1lLeZg8&list=PLRwVmtr-pp070AKU7G71q8XyCRttsWIvi&index=2&t=1s
 
