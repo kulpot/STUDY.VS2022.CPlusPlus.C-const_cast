@@ -10,7 +10,8 @@ class Cow {};
 void main()
 {
 	const Cow* c = new Cow;
-	Cow* c2 = c;
+	//Cow* c2 = c;		//error: c is and const
+	Cow* c2 = const_cast<Cow*>(c);
 
 	delete c;
 }
